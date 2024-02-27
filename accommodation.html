@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- yong stylesheet -->
+    <link rel="stylesheet" href="./assets/yong.css">
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+    <!-- Nav Bar -->
+    <nav class="navbar container">
+        <div class="navbox" id="navbox">
+            <!-- logo -->
+            <div>               
+                <a href="./index.html">
+                    <img height="35rem" src="./assets/Mountain-white.png" style="background-color: #735611;">
+                </a>
+            </div>
+            <!-- Menu -->
+            <div>
+                <button class="menu-btn menu-toggle-icon" onclick="openMenu()" >
+                    MENU
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Menu Content -->
+        <div class="menu " id="menu">
+            <div class="menu-inner" style="text-size-adjust: 60%;">
+            <ul class="list">
+                <li class="list-item">
+                    <div>               
+                        <a href="./index.html">
+                            <img src="./assets/Mountain-white.png" style="background-color: #735611;">
+                        </a>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <a href="/accommodation.html" class="list-link">ACCOMMODATION</a>
+                </li>
+                <li class="list-item">
+                    <a href="/camping.html" class="list-link">CAMPING</a>
+                </li>
+                <li class="list-item">
+                    <a href="./index.html" class="list-link">HOME</a>
+                </li>
+                <li class="list-item">
+                    <a href="" class="list-link">OUR TEAM</a>
+                </li>
+                <li class="list-item">
+                    <a href="/mount.html" class="list-link">MOUNT YONG BELAR</a>
+                </li>
+                <li class="list-item">
+                    <a href="/hiking.html" class="list-link">HIKING YONG BELAR</a>
+                </li>
+                <li class="list-item">
+                    <a href="/experiences.html" class="list-link">EXPERIENCES</a>
+                </li>
+                <li class="list-item">
+                    <a href="/contact.html" class="list-link">CONTACT</a>
+                </li>
+            </ul>
+            <div id="close-btn" onclick="closeNav()">
+                X
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="box h-50">
+        <img class="box-img" src="./assets/intro.jpg" alt="">
+        <div class="box-content caps">
+            <a href="">
+                <div class="f-xl">Yong Belar</div>
+                <div class="f-sm">Lojing HighLands</div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<!-- Experiences -->
+<div class="container">
+    <div class="box h-70">
+        <img class="box-img" src="./assets/night camp.jpg" alt="">
+        <div class="box-content caps">
+            <a href="">
+                <div class="f-xl">The Experience</div>
+                <div class="f-xsm m-sm not-caps">Come to our island and share your experience with others</div>
+                <div class="f-sm"><button class="find-btn">
+                    Find Out More
+                </button></div>
+            </a>
+        </div>
+        
+    </div>
+</div><div class="contianer">
+    <div class="box acco-box">
+        <div class="accomadation-img-box">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+        </div>
+        <div class="accomadation-content f-md">
+            <ul class="black">
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box acco-box">
+        <div class="accomadation-img-box">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+        </div>
+        <div class="accomadation-content f-md">
+            <ul class="black">
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box acco-box">
+        <div class="accomadation-img-box">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+            <img class="img-box" src="/assets/hotel.jpg" alt="">
+        </div>
+        <div class="accomadation-content f-md">
+            <ul class="black">
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Image gallery -->
+<div class="container gallery-box">
+    <div class="seperate-view" id="seperate-view">
+        <img src="https://picsum.photos/300?image=80" alt="">
+    </div>
+    <div class="f-sm box" id="slider">
+        <button id="leftBtn"><i class="fa fa-angle-left"></i></button>
+        <img src="/assets/hotels1.jpg" alt="">
+        <img src="/assets/hotels2.jpg" alt="">
+        <img src="/assets/hotels3.jpg" alt="" style="margin: 6rem; transform: scale(1.2)">
+        <img src="/assets/hotels4.jpeg" alt="">
+        <img src="/assets/hotels5.jpg" alt="">
+        <button  id="rightBtn"><i class="fa fa-angle-right"></i></button>        
+    </div>
+</div>
+<!-- End Details -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="box footer-box">
+                <div class="caps f-md foot-head">
+                    Visit
+                </div>
+                <div class="f-xsm foot-tail">
+                    Yong Belar Park
+                            18300 Lojing Highlands
+                            Kelantan
+                </div>
+            </div>
+            <div class="box footer-box">
+                <div class="caps f-md foot-head">
+                    Follow
+                </div>
+                <div class="f-sm foot-tail">
+                    <div class="social-media-btn">
+                        <a href="" >
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="social-media-btn">
+                        <a href="" >
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-box">
+                <div class="caps f-md foot-head">
+                    Contact
+                </div>
+                <div class="f-xsm foot-tail">
+                    <a href="">Syazila Ali</a>
+                    <a href="">tel. +60 12 333 3725</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <span>&copy; 2024 YBPARK ALL RIGHTS RESERVED
+
+            </span>
+        </div>
+    </footer>
+    <script src="yong.js"></script>
+</body>
+</html>
