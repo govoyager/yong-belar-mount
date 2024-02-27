@@ -11,67 +11,32 @@
 </head>
 <body>
     <header class="header" id="header">
-    <!-- Nav Bar -->
-    <nav class="navbar container">
-        <div class="navbox" id="navbox">
-            <!-- logo -->
-            <div>               
-                <a href="./index.html">
-                    <img height="35rem" src="./assets/Mountain-white.png" style="background-color: #735611;">
-                </a>
-            </div>
-            <!-- Menu -->
-            <div>
-                <button class="menu-btn menu-toggle-icon" onclick="openMenu()" >
-                    MENU
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Menu Content -->
-        <div class="menu " id="menu">
-            <div class="menu-inner" style="text-size-adjust: 60%;">
-            <ul class="list">
-                <li class="list-item">
-                    <div>               
-                        <a href="./index.html">
-                            <img src="./assets/Mountain-white.png" style="background-color: #735611;">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <a href="/accommodation.html" class="list-link">ACCOMMODATION</a>
-                </li>
-                <li class="list-item">
-                    <a href="/camping.html" class="list-link">CAMPING</a>
-                </li>
-                <li class="list-item">
-                    <a href="/yong.html" class="list-link">HOME</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="list-link">OUR TEAM</a>
-                </li>
-                <li class="list-item">
-                    <a href="/mount.html" class="list-link">MOUNT YONG BELAR</a>
-                </li>
-                <li class="list-item">
-                    <a href="/hiking.html" class="list-link">HIKING YONG BELAR</a>
-                </li>
-                <li class="list-item">
-                    <a href="/experiences.html" class="list-link">EXPERIENCES</a>
-                </li>
-                <li class="list-item">
-                    <a href="/contact.html" class="list-link">CONTACT</a>
-                </li>
-            </ul>
-            <div id="close-btn" onclick="closeNav()">
-                X
-            </div>
-        </div>
-        </div>
-    </nav>
-</header>
-
+        <!-- Nav Bar -->
+        <nav class="navbar f-sm">
+                <!-- logo -->
+                <div class="nav-logo">               
+                    <a href="./index.html">
+                        <img height="40rem" src="./assets/Mountain-white.png" style="background-color: #3C0753;">
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div>
+                    <ul class="d-flex">
+                        <li class="nav-item"><a href="/accommodation.html">Accommodation</a></li>
+                        <li class="nav-item"><a href="/camping.html">Camping</a></li>
+                        <li class="nav-item more" onclick="openMore()"><button class="more-btn">More <i class="fa fa-angle-down"></i></button>
+                            <div class="more-content" id="more-content">
+                                <a href="/experiences.html">Experience</a>
+                                <a href="/hiking.html">Hiking</a>
+                                <a href="/mount.html">Mount Belar</a>
+                                <a href="/contact.html">Contact</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
 <div class="container">
     <div class="box">
         <img class="box-img" src="./assets/intro.jpg" alt="">

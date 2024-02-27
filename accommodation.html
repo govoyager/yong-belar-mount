@@ -12,66 +12,32 @@
 </head>
 <body>
     <header class="header" id="header">
-    <!-- Nav Bar -->
-    <nav class="navbar container">
-        <div class="navbox" id="navbox">
-            <!-- logo -->
-            <div>               
-                <a href="./index.html">
-                    <img height="35rem" src="./assets/Mountain-white.png" style="background-color: #735611;">
-                </a>
-            </div>
-            <!-- Menu -->
-            <div>
-                <button class="menu-btn menu-toggle-icon" onclick="openMenu()" >
-                    MENU
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Menu Content -->
-        <div class="menu " id="menu">
-            <div class="menu-inner" style="text-size-adjust: 60%;">
-            <ul class="list">
-                <li class="list-item">
-                    <div>               
-                        <a href="./index.html">
-                            <img src="./assets/Mountain-white.png" style="background-color: #735611;">
-                        </a>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <a href="/accommodation.html" class="list-link">ACCOMMODATION</a>
-                </li>
-                <li class="list-item">
-                    <a href="/camping.html" class="list-link">CAMPING</a>
-                </li>
-                <li class="list-item">
-                    <a href="./index.html" class="list-link">HOME</a>
-                </li>
-                <li class="list-item">
-                    <a href="" class="list-link">OUR TEAM</a>
-                </li>
-                <li class="list-item">
-                    <a href="/mount.html" class="list-link">MOUNT YONG BELAR</a>
-                </li>
-                <li class="list-item">
-                    <a href="/hiking.html" class="list-link">HIKING YONG BELAR</a>
-                </li>
-                <li class="list-item">
-                    <a href="/experiences.html" class="list-link">EXPERIENCES</a>
-                </li>
-                <li class="list-item">
-                    <a href="/contact.html" class="list-link">CONTACT</a>
-                </li>
-            </ul>
-            <div id="close-btn" onclick="closeNav()">
-                X
-            </div>
-        </div>
-        </div>
-    </nav>
-</header>
+        <!-- Nav Bar -->
+        <nav class="navbar f-sm">
+                <!-- logo -->
+                <div class="nav-logo">               
+                    <a href="./index.html">
+                        <img height="40rem" src="./assets/Mountain-white.png" style="background-color: #3C0753;">
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div>
+                    <ul class="d-flex">
+                        <li class="nav-item"><a href="/accommodation.html">Accommodation</a></li>
+                        <li class="nav-item"><a href="/camping.html">Camping</a></li>
+                        <li class="nav-item more" onclick="openMore()"><button class="more-btn">More <i class="fa fa-angle-down"></i></button>
+                            <div class="more-content" id="more-content">
+                                <a href="/experiences.html">Experience</a>
+                                <a href="/hiking.html">Hiking</a>
+                                <a href="/mount.html">Mount Belar</a>
+                                <a href="/contact.html">Contact</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
 
 <div class="container">
     <div class="box h-50">
@@ -82,96 +48,102 @@
                 <div class="f-sm">Lojing HighLands</div>
             </a>
         </div>
-        
     </div>
 </div>
-<!-- Experiences -->
-<div class="container">
-    <div class="box h-70">
-        <img class="box-img" src="./assets/night camp.jpg" alt="">
-        <div class="box-content caps">
-            <a href="">
-                <div class="f-xl">The Experience</div>
-                <div class="f-xsm m-sm not-caps">Come to our island and share your experience with others</div>
-                <div class="f-sm"><button class="find-btn">
-                    Find Out More
-                </button></div>
-            </a>
+<!-- Rooms gallery -->
+<div class="contaier rooms-container">
+    <!-- Dorm Room -->
+    <div class="box rooms-box">
+        <div class="carousel-container">
+            <div class="mySlides1">
+              <img src="/assets/dorm-01.jpg" alt="slide" />
+            </div>          
+            <!-- Next and previous buttons -->
+            <a class="prev" id="prev" onclick="prevSlide(1)">&#10094;</a>
+            <a class="next" id="next" onclick="nextSlide(1)">&#10095;</a>
         </div>
-        
-    </div>
-</div><div class="contianer">
-    <div class="box acco-box">
-        <div class="accomadation-img-box">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
-        </div>
-        <div class="accomadation-content f-md">
-            <ul class="black">
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
+        <div class="vl"></div>
+        <div class="room-content">
+            <div class="f-md caps">Dorm Room</div>
+            <ul class="f-xsm">
+                <li class="m-xsm">10 single bed</li>
+                <li class="m-xsm">Extra 5 mattress</li>
+                <li class="m-xsm">Cooking place</li>
+                <li class="m-xsm">Toilet</li>
+                <li class="m-xsm">BBQ area</li>
+                <li class="m-xsm">Gathering hut</li>
+                <li class="m-xsm">Free Wi-Fi</li>
+                RM300/night
             </ul>
         </div>
     </div>
-    <div class="box acco-box">
-        <div class="accomadation-img-box">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
+    <!-- Chimney Lux Room -->
+    <div class="box rooms-box">
+        <div class="carousel-container">
+            <div class="mySlides2">
+              <img src="/assets/chimney-01.jpg" alt="slide" />
+            </div>          
+            <!-- Next and previous buttons -->
+            <a class="prev" id="prev" onclick="prevSlide(2)">&#10094;</a>
+            <a class="next" id="next" onclick="nextSlide(2)">&#10095;</a>
         </div>
-        <div class="accomadation-content f-md">
-            <ul class="black">
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
+        <div class="vl"></div>
+        <div class="room-content">
+            <div class="f-md caps">Chimney Lux Room</div>
+            <ul class="f-xsm">
+                <li class="m-xsm">1 room (king size bed) + Bathroom</li>
+                <li class="m-xsm">2 rooms (queen size bed)</li>
+                <li class="m-xsm">Dining Table (6 chairs)</li>
+                <li class="m-xsm">Chimney & woods</li>
+                <li class="m-xsm">Projector & JBL Sound system</li>
+                <li class="m-xsm">Furniture set sofa</li>
+                <li class="m-xsm">Cooking place</li>
+                <li class="m-xsm">BBQ area</li>
+                <li class="m-xsm">Gathering hut</li>
+                <li class="m-xsm">Free Wi-Fi</li>
+                RM450/night
             </ul>
         </div>
     </div>
-    <div class="box acco-box">
-        <div class="accomadation-img-box">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
-            <img class="img-box" src="/assets/hotel.jpg" alt="">
+    <!-- 4Doors Room -->
+    <div class="box rooms-box">
+        <div class="carousel-container">
+            <div class="mySlides3">
+              <img src="/assets/4doors-01.jpg" alt="slide" />
+            </div>          
+            <!-- Next and previous buttons -->
+            <a class="prev" id="prev" onclick="prevSlide(3)">&#10094;</a>
+            <a class="next" id="next" onclick="nextSlide(3)">&#10095;</a>
         </div>
-        <div class="accomadation-content f-md">
-            <ul class="black">
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit.
-                </li>
+        <div class="vl"></div>
+        <div class="room-content">
+            <div class="f-md caps">4 Doors Room</div>
+            <ul class="f-xsm">
+                <li class="m-xsm">2 rooms (queen size bed) front view</li>
+                <li class="m-xsm">2 rooms (queen size bed)back view</li>
+                <li class="m-xsm">Cooking place</li>
+                <li class="m-xsm">Toilet</li>
+                <li class="m-xsm">BBQ area</li>
+                <li class="m-xsm">Gathering hut</li>
+                <li class="m-xsm">Free Wi-Fi</li>
+                RM350/night
             </ul>
         </div>
     </div>
 </div>
-</div>
+
 <!-- Image gallery -->
 <div class="container gallery-box">
     <div class="seperate-view" id="seperate-view">
-        <img src="https://picsum.photos/300?image=80" alt="">
+        <img src="/assets/accommodation3.jpeg" alt="">
     </div>
     <div class="f-sm box" id="slider">
         <button id="leftBtn"><i class="fa fa-angle-left"></i></button>
-        <img src="/assets/hotels1.jpg" alt="">
-        <img src="/assets/hotels2.jpg" alt="">
-        <img src="/assets/hotels3.jpg" alt="" style="margin: 6rem; transform: scale(1.2)">
-        <img src="/assets/hotels4.jpeg" alt="">
-        <img src="/assets/hotels5.jpg" alt="">
+        <img src="/assets/accommodation1.jpeg" alt="">
+        <img src="/assets/accommodation2.jpeg" alt="">
+        <img src="/assets/accommodation3.jpeg" alt="" style="margin: 6rem; transform: scale(1.2)">
+        <img src="/assets/accommodation4.jpeg" alt="">
+        <img src="/assets/accommodation5.jpeg" alt="">
         <button  id="rightBtn"><i class="fa fa-angle-right"></i></button>        
     </div>
 </div>
