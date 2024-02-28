@@ -6,30 +6,37 @@ const selectElement = (selector) => {
 
 
 // navbar
-
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if(window.scrollY > 0){
-        header.classList.add('scrolled');
+const scrollHeader = () => {
+    const headerElement = selectElement('#header');
+    if(this.scrollY >= 5){
+        headerElement.classList.add('scrolled');
     }
     else{
-        header.classList.remove('scrolled');
+        headerElement.classList.remove('scrolled');
     }
-})
+}
+window.addEventListener('scroll', scrollHeader);
 
+function openMenu() {
+    document.getElementById("mobile-menu-content").classList.add("open");
+}
+function closeMenu(){
+    document.getElementById("mobile-menu-content").classList.remove("open");
+}
 
 function openMore() {
     document.getElementById("more-content").classList.add("open");
+    
 }
 window.onclick = (event) =>{
-    if(!event.target.matches('.more-btn')){
+    if(event.target.matches('.more-btn') === !true){
         if(document.getElementById("more-content").classList.contains("open")){
             document.getElementById("more-content").classList.remove("open");
-        }
+        }   
     }
     console.log("window clicked clicked clicked");
 }
-  
+
 // Accomodation image slider
 const SLIDER_WIDTH = 5;
 

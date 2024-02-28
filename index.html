@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./assets/yong.css">
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Remix icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
 </head>
 <body>
     <header class="header" id="header">
@@ -21,24 +26,43 @@
                     </a>
                 </div>
                 <!-- Menu -->
-                <div>
+                <div class="desktop-menu">
                     <ul class="d-flex">
                         <li class="nav-item"><a href="/accommodation.html">Accommodation</a></li>
                         <li class="nav-item"><a href="/camping.html">Camping</a></li>
-                        <li class="nav-item more" onclick="openMore()"><button class="more-btn">More <i class="fa fa-angle-down"></i></button>
+                        <li class="nav-item more" onclick="openMore()"><button class="more-btn">More<span class="fa fa-angle-down"></span></button>
                             <div class="more-content" id="more-content">
                                 <a href="/experiences.html">Experience</a>
                                 <a href="/hiking.html">Hiking</a>
                                 <a href="/mount.html">Mount Belar</a>
                                 <a href="/contact.html">Contact</a>
                             </div>
-                            
                         </li>
                     </ul>
                 </div>
+                <div class="mobile-menu">
+                    <button class="menu-btn fa fa-bars" onclick="openMenu()">
+                    </button>
+                </div>
+                
         </nav>
     </header>
-
+    <div class="mobile-menu-content container" id="mobile-menu-content">
+        <div class="f-xmd close-btn-container" >
+            <button class="close-btn" onclick="closeMenu()">X</button>
+        </div>
+        <ul class="list f-md">
+            <li class="nav-item"><a href="/accommodation.html">Accommodation</a></li>
+            <li class="nav-item"><a href="./camping.html">Camping</a></li>
+            <li class="nav-item"><a href="./experiences.html">Experiences</a></li>
+            <li class="nav-item"><a href="./hiking.html">Hiking</a></li>
+            <li class="nav-item"><a href="./m"></a>Mount Yong Belar </li>
+            <li class="nav-item"><a href="./hiking.html"></a>Hiking Yong Belar </li>
+            <li class="nav-item"><a href="">Contact</a></li>
+        </ul>
+        
+    </div>
+    <!-- Intro -->
     <div class="container">       
             <div class="box home-box">
                 <img class="box-img" style="height: 100vh" src="./assets/mountain7.jpg" alt="">
