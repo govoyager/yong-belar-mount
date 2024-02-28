@@ -559,8 +559,8 @@ hr.event-card-line{
 .carousel-container {
     border-radius: 30px;
     overflow: hidden;
-    width: 37rem;
-    height: 37rem;
+    width: 20rem;
+    height: 25rem;
     position: relative;
     box-shadow: 0 0 30px -20px #223344;
     margin: 4rem 4rem;
