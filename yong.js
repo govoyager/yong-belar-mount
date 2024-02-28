@@ -88,7 +88,7 @@ insertToDom = () => {
     seperateView.getElementsByTagName('img')[0].src = images[2];
 }
 
-permuteToLeft = () => {
+permuteToRight = () => {
   let tmp = images[0];
     for(let i = 0; i < images.length - 1; i++) {
         images[i] = images[i+1]
@@ -96,7 +96,7 @@ permuteToLeft = () => {
     images[images.length - 1] = tmp;
 }
 
-permuteToRight = () => {
+permuteToLeft = () => {
    let tmp = images[images.length - 1];
     for(let i = images.length - 1; i > 0; i--) {
         images[i] = images[i-1]
