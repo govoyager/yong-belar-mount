@@ -38,7 +38,7 @@
     /* used colors */
     --theme-color: #221c07;
     --font-color: #030637;
-    --theme-color-light: #3c075361;
+    --theme-color-light: #221c07b5;
     --theme-gradient: linear-gradient(#332a0a, #656f34 );
 }
 *{
@@ -608,7 +608,7 @@ hr.event-card-line{
 }
 .prev:hover,
 .next:hover {
-  background-color: #3c075371;
+  background-color: var(--theme-color-light);
 }
   .vl{
     display: none;
@@ -651,8 +651,8 @@ hr.event-card-line{
   }
   
   #slider button{
-    width: 5rem;
-    height: 20rem;
+    width: 4rem;
+    height: 16rem;
     background-color: var(--theme-color-light);
     color:#fff;
     cursor: pointer;
