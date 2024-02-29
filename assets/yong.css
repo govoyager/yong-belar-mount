@@ -545,6 +545,9 @@ hr.event-card-line{
 .show{
     display: none;
 }
+.screen-sm-hidden{
+    display: block;
+}
 .rooms-container{
     display: flex;
     flex-direction: column;
@@ -779,22 +782,17 @@ footer{
     }
     .screen-sm-hidden{
         display: none;
-    }
+    }    
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 701px) and (max-width: 1024px){
     html{
-        font-size: 35%
+        font-size: 35%;
     }
     .mobile-menu{
-        display:none;
+        display: none;
     }
     .desktop-menu{
         display: block;
-    }
-}
-@media screen and (min-width: 701px) and (max-width: 999px){
-    html{
-        font-size: 35%;
     }
     .carousel-container{
         object-fit: cover;
@@ -813,7 +811,7 @@ footer{
         display: block;
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
     html{
         font-size: 62.5%;
     }
@@ -865,5 +863,7 @@ footer{
     .vl{
         display: inline-block;
     }
-      
+    .seperate-view{
+        z-index: 9999;
+    }
 }

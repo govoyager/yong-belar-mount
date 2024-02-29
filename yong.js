@@ -86,6 +86,9 @@ insertToDom = () => {
     slider.getElementsByTagName('img')[2].style.transform = 'scale(1.2)';
     slider.getElementsByTagName('img')[2].style.margin = '6rem';
     seperateView.getElementsByTagName('img')[0].src = images[2];
+    // to hide 2 image boxes in mobile
+    slider.getElementsByTagName('img')[0].classList.add('screen-sm-hidden');
+    slider.getElementsByTagName('img')[4].classList.add('screen-sm-hidden');
 }
 
 permuteToRight = () => {
