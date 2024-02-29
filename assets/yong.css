@@ -555,12 +555,13 @@ hr.event-card-line{
     border: 0.5rem solid var(--theme-color);
     margin: 2rem;
     padding: 0;
+    width: 50rem;
 }
 .carousel-container {
     border-radius: 30px;
     overflow: hidden;
-    width: 20rem;
-    height: 25rem;
+    width: 40rem;
+    height: 40rem;
     position: relative;
     box-shadow: 0 0 30px -20px #223344;
     margin: 4rem 4rem;
@@ -776,6 +777,9 @@ footer{
     html{
         font-size: 35%
     }
+    .screen-sm-hidden{
+        display: none;
+    }
 }
 @media screen and (min-width: 700px) {
     html{
@@ -861,5 +865,5 @@ footer{
     .vl{
         display: inline-block;
     }
-    
+      
 }
