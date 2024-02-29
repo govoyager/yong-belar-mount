@@ -300,6 +300,9 @@ ul{
         margin: 1rem;
         display: block; 
     }
+    .mobile-menu-content ul{
+        font-size: var(--font-size-lg);
+    }
     .close-btn-container{
         display: flex;
         align-items: start;
@@ -685,7 +688,7 @@ hr.event-card-line{
     flex-direction: column;
     align-items: center;
     font-size: 4rem;
-    width: 80rem;
+    width: 65rem;
     margin: 5rem 0;
     padding: 3rem;
     border-radius: 2rem;
