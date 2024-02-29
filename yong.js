@@ -159,3 +159,30 @@ setInterval(() => {
 }, 1000);
 }
 
+                                                    // Hiking page 
+// Accordion
+if(document.getElementById('hiking-page-accordion') !== null)
+document.addEventListener('DOMContentLoaded',() => {
+    const accordions = document.querySelectorAll('.accordion-item');
+    
+    accordions.forEach(element => {
+        element.addEventListener('click', (event) =>{
+            const self = event.currentTarget;
+            const control = self.querySelector('.accordion-control');
+            const content = self.querySelector('.accordion-content');
+    
+            self.classList.toggle('open');
+    
+            if(self.classList.contains('open')){
+                control.setAttribute('aria-expanded', true);
+                content.setAttribute('aria-hidden', false);
+                content.style.maxHeight = content.scrollHeight + 'rem';
+            }else{
+                control.setAttribute('aria-expanded', false);
+                content.setAttribute('aria-hidden', true);
+                content.style.maxHeight = null;
+            }
+        });
+        });
+    })
+

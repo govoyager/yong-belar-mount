@@ -655,6 +655,77 @@ hr.event-card-line{
     background-color: var(--theme-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
+/* hiking page */
+/* Hiking Accordions */
+.process-accordion{
+    display: flex;
+    font-size: 4rem;
+    width: 60rem;
+    margin: 5rem 0;
+}
+.accordion-list{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.accordion-item{
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    box-shadow: 0 1rem 0 0 var(--theme-color);
+    border: 0.3rem solid var(--theme-color);
+}
+.accordion-control {
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    width: 100%;
+    position: relative;
+}
+.accordion-number {
+    padding-right: 1.5625rem;
+    font-weight: 500;
+}
+.accordion-title {
+    font-weight: 500;
+    text-transform: capitalize;
+    flex: 1 1 auto;
+    display: flex;
+    line-height: 120%;
+    padding-right: 1.25rem;
+    justify-content: flex-start;
+}
+.accordion-icon {
+    display: flex;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    color: inherit;
+}
+.accordion-content {
+    padding: 0 6rem 0 6rem;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: 0.5s ease-in-out;
+    box-sizing: content-box;
+    position: relative;
+    z-index: 5;
+  }
+  .open .accordion-content {
+    padding: 2rem 3rem;
+  }
+  .open .accordion-control{
+    background-color: var(--theme-color);
+    color: white;
+  }
+  .open {
+    background-color: whitesmoke;
+  }
+  
+  .open .accordion-icon {
+    transform: rotate(180deg);
+  }
 /* social media button */
 .social-media-btn{
     display: flex;
