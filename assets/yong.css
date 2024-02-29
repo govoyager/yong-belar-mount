@@ -36,9 +36,10 @@
     
     --gap: 2rem;
     /* used colors */
-    --theme-color: #3C0753;
+    --theme-color: #221c07;
     --font-color: #030637;
     --theme-color-light: #3c075361;
+    --theme-gradient: linear-gradient(#332a0a, #656f34 );
 }
 *{
     margin: 0;
@@ -197,6 +198,9 @@ ul{
     justify-content: center;
     text-align: center;
 }
+.box img{
+    filter: brightness(60%);
+}
 .box-content{
     position: absolute;
 }
@@ -217,7 +221,7 @@ ul{
         width: 100%;
     }
     header.scrolled{
-        background-color: white;
+        background-color: whitesmoke;
     }
     .desktop-menu{
         display: none;
@@ -229,12 +233,15 @@ ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 8rem;
+        height: 7rem;
         padding: 2rem;
     }
-    .nav-logo{
-        padding: 1rem;
+    .nav-logo a img{
+        /* background-image: linear-gradient(to left, #ff9a02, #1a6b95); */
+        background-image: var(--theme-gradient);
+        z-index: 3;
     }
+    
     .nav-item{
         padding: 1rem;
     }
@@ -253,7 +260,7 @@ ul{
     .more-content {
         display: none;
         position: absolute;
-        background-color: var(--theme-color);
+        background-image: linear-gradient(#332a0a, #656f34 );
         color: white;
         min-width: 16rem;
         top: 5rem;
@@ -281,7 +288,7 @@ ul{
         width: 100%;
         height: 100%;
         z-index: 999;
-        background-color: var(--theme-color);
+        background-image: var(--theme-gradient);
         color: white;
         justify-content: space-between;
         position: fixed;
@@ -337,8 +344,8 @@ ul{
     left: 0;
     width: 100em;
     height: 43.75rem;
-    -webkit-animation: cloudLoop 50s linear infinite;
-    animation: cloudLoop 50s linear infinite;
+    -webkit-animation: cloudLoop 70s linear infinite;
+    animation: cloudLoop 70s linear infinite;
   }
   @keyframes cloudLoop {
     0% {
@@ -655,13 +662,34 @@ hr.event-card-line{
     background-color: var(--theme-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
+  .gallery-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+  }
 /* hiking page */
 /* Hiking Accordions */
+.accordion-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trip-name{
+    color: white;
+    padding: 2rem;
+
+}
 .process-accordion{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 4rem;
-    width: 60rem;
+    width: 80rem;
     margin: 5rem 0;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(#656f34, #332a0a);
 }
 .accordion-list{
     display: flex;
@@ -672,7 +700,7 @@ hr.event-card-line{
     background-color: whitesmoke;
     border-radius: 2rem;
     overflow: hidden;
-    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    transition: 0.2s ease-in-out;
     box-shadow: 0 1rem 0 0 var(--theme-color);
     border: 0.3rem solid var(--theme-color);
 }
@@ -699,7 +727,7 @@ hr.event-card-line{
 .accordion-icon {
     display: flex;
     position: relative;
-    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    transition: 0.2s ease-in-out;
     color: inherit;
 }
 .accordion-content {
@@ -707,21 +735,54 @@ hr.event-card-line{
     max-height: 0;
     overflow: hidden;
     will-change: max-height;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     box-sizing: content-box;
     position: relative;
-    z-index: 5;
-  }
-  .open .accordion-content {
-    padding: 2rem 3rem;
-  }
-  .open .accordion-control{
-    background-color: var(--theme-color);
-    color: white;
-  }
-  .open {
-    background-color: whitesmoke;
-  }
+}
+.accordion-content-list{
+    text-align: start;
+    list-style-type:square;
+    font-size: 3rem;
+    margin: 1rem 0 1rem 2rem ;
+}
+.accordion-content-list li{
+    margin: 0.5rem 0.5;
+}
+.accordion-content-list p{
+    margin: 2rem 0;
+    color: #525252;
+}
+.accordion-terms-list{
+    text-align: start;
+    list-style-type:decimal;
+    font-size: 3rem;
+    margin: 1rem 0 1rem 2rem ;
+}
+.accordion-terms-list li{
+    margin: 0.8rem 0.5rem;
+}
+.trip-cost{
+    text-align: start;
+    margin: 3rem 0 ;
+    color: whitesmoke;
+}
+.trip-cost ul{
+    margin: 1rem;
+    font-size: 2.7rem;
+}
+.trip-cost span{
+    font-size: 2.7rem;
+    font-style: italic;
+}
+
+
+.open .accordion-content {  
+    margin-top: 1rem;
+}
+.open .accordion-control{
+    border-bottom: 0.5rem solid #3C0753;
+    color: var(--theme-color);
+}
   
   .open .accordion-icon {
     transform: rotate(180deg);

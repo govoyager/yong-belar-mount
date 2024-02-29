@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="./assets/yong.css">
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <!-- Remix icons -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
 </head>
 <body>
     <header class="header" id="header">
         <!-- Nav Bar -->
         <nav class="navbar f-sm">
                 <!-- logo -->
-                <div class="nav-logo">               
+                <div class="nav-logo">          
                     <a href="./index.html">
-                        <img height="30rem" src="./assets/Mountain-white.png" style="background-color: #3C0753;">
+                        <img height="35rem" src="./assets/Mountain-white.png" >
                     </a>
                 </div>
                 <!-- Menu -->
@@ -45,7 +52,7 @@
         <div class="f-xmd close-btn-container" >
             <button class="close-btn" onclick="closeMenu()">X</button>
         </div>
-        <ul class="list f-md">
+        <ul class="list">
             <li class="nav-item"><a href="/accommodation.html">Accommodation</a></li>
             <li class="nav-item"><a href="/camping.html">Camping</a></li>
             <li class="nav-item"><a href="/experiences.html">Experiences</a></li>
@@ -87,40 +94,164 @@
 </div>
 <!-- Hiking Plans -->
 <div class="container">
-    <div class="box">
+    <div class="accordion-box">
         <div class="process-accordion" id="hiking-page-accordion">
+            <div class="trip-name"> YB SPEED DATE </div>
             <ul class="accordion-list">
             <li class="accordion-item">
                 <button class="accordion-control" aria-expanded="false">
-                <span class="accordion-number">01</span>
-                <span class="accordion-title">Consultation</span>
+                <span class="accordion-number fa fa-clock-o f-xmd"></span>
+                <span class="accordion-title">Tentaive Timeline</span>
                 <span class="accordion-icon fa fa-angle-down"></span>
                 </button>
-                <div class="accordion-content text" aria-hidden="true">
-                <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                <div class="accordion-content" aria-hidden="true">
+                    <ul class="accordion-content-list">
+                        <li> 0400hrs Meet up at Masjid Lojing</li>
+                        <li> 0415hrs 4WD to Starting Point</li>
+                        <li> 0445hrs Arrive at Kebun, briefing, & warm up</li>
+                        <li> 0500hrs Hike Starts</li>
+                        <li> 0700hrs Kem Tudung Periuk</li>
+                        <li> (re-group, solat & fast breakfast, last water point)</li>
+                        <li> 0730hrs Trekking continues</li>
+                        <li> 0930hrs Arrive at Kem Kasut </li>
+                        <li> (Rest & re-group 15min) – Cut-off Time @ 1045hrs</li>
+                        <li> 0945hrs Depart Kem Kasut – summit push</li>
+                        <li> 1045hrs Summit Yong Belar (lunch & photo session)</li>
+                        <li> 1215hrs Descend</li>
+                        <li> 12.50hrs Arrive Kem Kasut</li>
+                        <li> 1420hrs Arrive Kem Tudung periuk</li>
+                        <li> 1600hrs Pintu Rimba & return 4WD</li>
+                        <li> 1700hrs Drop off at Masjid Lojing</li>
+                    </ul>
                 </div>
             </li>
             <li class="accordion-item">
                 <button class="accordion-control" aria-expanded="false">
-                <span class="accordion-number">01</span>
-                <span class="accordion-title">Consultation</span>
+                <span class="accordion-number
+                 fa fa-list f-xmd"></span>
+                <span class="accordion-title">Mandatory Items</span>
                 <span class="accordion-icon fa fa-angle-down"></span>
                 </button>
-                <div class="accordion-content text" aria-hidden="true">
-                <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                <div class="accordion-content" aria-hidden="true">
+                    <ul class="accordion-content-list">
+                        <li>TWO headlamps with spare battery</li>
+                        <li>Emergency blanket</li>
+                        <li>Personal First Aid Kit</li>
+                        <li>Food & hydration</li>
+                        <li>Windbreaker</li>
+                        <li>Raincoat</li>
+                        <p>Failure to produce these items during item check prior to the starting point will render the trip cancelled, with no refunds.</p>
+                    </ul>
                 </div>
             </li>
             <li class="accordion-item">
                 <button class="accordion-control" aria-expanded="false">
-                <span class="accordion-number">01</span>
-                <span class="accordion-title">Consultation</span>
+                <span class="accordion-number ri-file-list-3-line f-xmd"></span>
+                <span class="accordion-title">Terms of Engagement</span>
                 <span class="accordion-icon fa fa-angle-down"></span>
                 </button>
-                <div class="accordion-content text" aria-hidden="true">
-                <p>During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+                <div class="accordion-content" aria-hidden="true">
+                    <ul class="accordion-terms-list">
+                        <li>For experienced G7 hikers only (strictly not for beginner/moderate hiker)</li>
+                        <li>Cut off time (cot) at Kem Kasut at 1045hrs</li>
+                        <li>Participants who are unable to make it to Kem Kasut before the Cut-off Time (COT) will have to wait and stay/rest at Kem Kasut until further instructions from the Mountain Guide (Itinerary based on normal pace of G7 hikers)</li>
+                        <li>Overtime charges at RM50/hour(s)/group to start after the 15th hour of hiking</li>
+                        <li>The Mountain Guide’s instructions should be adhered to at all times for the safety of all participants</li>
+                        <li>4WD pick up time starts at 5am, return at 7pm and must complete as per group</li>
+                        <li>Should a Group arrive at the Starting Point at different time, the earlier cohort of the Group will bear the additional costs for the transfer to Masjid Lojing should the cohort choose to not wait for the later cohort</li>
+                    </ul>
                 </div>
             </li>
             </ul>
+            <div class="trip-cost">
+                Cost Per Pax
+                <ul>
+                    <li>RM165 (inclusive of insurance and certificate of completion)</li>
+                    <li>RM150 (without insurance and certificate of completion)</li>
+                </ul>
+                <span class="note">Prices quoted are not inclusive of food and beverages.</span>
+            </div>
+        </div>
+        <div class="process-accordion" id="hiking-page-accordion">
+            <div class="trip-name"> 2 Days 1 Night - YB Introduction </div>
+            <ul class="accordion-list">
+            <li class="accordion-item">
+                <button class="accordion-control" aria-expanded="false">
+                <span class="accordion-number fa fa-clock-o f-xmd"></span>
+                <span class="accordion-title">Tentaive Timeline</span>
+                <span class="accordion-icon fa fa-angle-down"></span>
+                </button>
+                <div class="accordion-content" aria-hidden="true">
+                    <p>Day 1</p>
+                    <ul class="accordion-content-list">
+                        <li>0630hrs Meet up point Masjid Lojing</li>
+                        <li>0700hrs 4WD to Starting Point</li>
+                        <li>0730hrs Briefing & warm up</li>
+                        <li>0800hrs Start hike</li>
+                        <li>0810hrs Pintu Rimba</li>
+                        <li>1000hrs Kem Tudung Periuk (campsite)</li>
+                        <li>1100hrs Depart Kem Tudung Periuk – summit push</li>
+                        <li>1400hrs Kem Kasut</li>
+                        <li>1500hrs Summit Yong Belar (group photo)</li>
+                        <li>1530hrs Descend</li>
+                        <li>1630hrs Kem Kasut</li>
+                        <li>1900hrs Kem Tudung Periuk (overnight)</li>
+                    </ul>
+                    <p>Day 2</p>
+                    <ul class="accordion-content-list">
+                        <li>0800hrs Kem Tudung Periuk (pack, clean up camspite)</li>
+                        <li>1000hrs Descend from Kem Tudung Periuk</li>
+                        <li>1300hrs Pintu Rimba & return 4WD</li>
+                        <li>1400hrs Drop off at Masjid Lojing</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion-item">
+                <button class="accordion-control" aria-expanded="false">
+                <span class="accordion-number
+                 fa fa-list f-xmd"></span>
+                <span class="accordion-title">Mandatory Items</span>
+                <span class="accordion-icon fa fa-angle-down"></span>
+                </button>
+                <div class="accordion-content" aria-hidden="true">
+                    <ul class="accordion-content-list">
+                        <li>TWO headlamps with spare battery</li>
+                        <li>Emergency blanket</li>
+                        <li>Personal First Aid Kit</li>
+                        <li>Food & hydration</li>
+                        <li>Windbreaker</li>
+                        <li>Raincoat</li>
+                        <p>Failure to produce these items during item check prior to the starting point will render the trip cancelled, with no refunds.</p>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion-item">
+                <button class="accordion-control" aria-expanded="false">
+                <span class="accordion-number ri-file-list-3-line f-xmd"></span>
+                <span class="accordion-title">Terms of Engagement</span>
+                <span class="accordion-icon fa fa-angle-down"></span>
+                </button>
+                <div class="accordion-content" aria-hidden="true">
+                    <ul class="accordion-terms-list">
+                        <li>For experienced G7 hikers only (strictly not for beginner/moderate hiker)</li>
+                        <li>Cut off time (cot) at Kem Kasut at 1045hrs</li>
+                        <li>Participants who are unable to make it to Kem Kasut before the Cut-off Time (COT) will have to wait and stay/rest at Kem Kasut until further instructions from the Mountain Guide (Itinerary based on normal pace of G7 hikers)</li>
+                        <li>Overtime charges at RM50/hour(s)/group to start after the 15th hour of hiking</li>
+                        <li>The Mountain Guide’s instructions should be adhered to at all times for the safety of all participants</li>
+                        <li>4WD pick up time starts at 5am, return at 7pm and must complete as per group</li>
+                        <li>Should a Group arrive at the Starting Point at different time, the earlier cohort of the Group will bear the additional costs for the transfer to Masjid Lojing should the cohort choose to not wait for the later cohort</li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+            <div class="trip-cost">
+                Cost Per Pax
+                <ul>
+                    <li>RM155 (inclusive of insurance and certificate of completion)</li>
+                    <li>RM140 (without insurance and certificate of completion)</li>
+                </ul>
+                <span class="note">Prices quoted are not inclusive of food and beverages.</span>
+            </div>
         </div>
     </div>
 </div>
