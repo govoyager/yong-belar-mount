@@ -542,9 +542,6 @@ hr.event-card-line{
     border-image-slice: 1;
 }
 /* Rooms Container */
-.show{
-    display: none;
-}
 .screen-sm-hidden{
     display: block;
 }
@@ -807,9 +804,6 @@ footer{
     }
     .vl{
         display: inline-block;
-    }
-    .show{
-        display: block;
     }
 }
 @media screen and (min-width: 1025px) {
