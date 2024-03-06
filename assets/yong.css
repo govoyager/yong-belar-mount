@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito+Sans:wght@200&family=Poiret+One&display=swap');
 
 @font-face {
-    font-family: 'monesque', sans-serif;
-    src: url('/assets/monesque/Monesque.otf') format('truetype');
+    font-family: sunnySpells;
+    src: url('/assets/fonts/sunny-spells-font/SunnyspellsRegular-MV9ze.otf') ;
 }
 :root{
     /* font */
-    --font-family: monesque, sans-serif;
+    --font-family:  sunnySpells;
     --font-size-xxl: 8.4rem;
     --font-size-xl: 7.2rem;
     --font-size-lg: 6rem;
@@ -198,9 +198,6 @@ ul{
     justify-content: center;
     text-align: center;
 }
-.box img{
-    filter: brightness(60%);
-}
 .box-content{
     position: absolute;
 }
@@ -219,9 +216,10 @@ ul{
         top:0;
         left:0;
         width: 100%;
+        color: whitesmoke;
     }
     header.scrolled{
-        background-color: whitesmoke;
+        background-image: linear-gradient(black, transparent);
     }
     .desktop-menu{
         display: none;
@@ -243,7 +241,7 @@ ul{
     }
     
     .nav-item{
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
     /* more dropdown */
     .more-btn{
@@ -371,6 +369,7 @@ ul{
     object-fit: cover;
     height: 100%;
     width: 100%;
+    filter: brightness(50%);
 }
 /* button */
 .explore-btn{
@@ -398,6 +397,7 @@ ul{
     color: whitesmoke;
     font-weight: bolder;
     border: 0.2rem solid whitesmoke;
+    letter-spacing: 0.3rem;
 }
 .find-btn:hover{
     background-color:var(--theme-color);
@@ -460,6 +460,7 @@ ul{
     background-color: #fafcfa3c;
     color: white;
     font-weight: bolder;
+    letter-spacing: 0.2rem;
 }
 .activity-card-explore-btn:hover{
     cursor: pointer;
@@ -674,6 +675,7 @@ hr.event-card-line{
 /* hiking page */
 /* hiking conditions */
 .hiking-conditions{
+    display: none;
     margin: 5rem 10rem;
 }
 .hiking-conditions ul li{
@@ -681,7 +683,7 @@ hr.event-card-line{
 }
 /* Hiking Accordions */
 .accordion-box{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -794,8 +796,91 @@ hr.event-card-line{
     color: var(--theme-color);
 }
   
-  .open .accordion-icon {
+.open .accordion-icon {
     transform: rotate(180deg);
+}
+
+/* plans tabs for desktop */
+.tab-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.tab-box{
+    display:flex;
+    width: 130rem;
+}
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+  
+  .tab-btn {
+    width: 40rem;
+    border: none;
+    color: #030637;
+    background-image: linear-gradient(to right, #656f34, transparent);
+    border-radius: 3rem 0rem 0rem 3rem;
+    font-weight: 100;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 4rem;
+  }
+  .tab-btn:hover {
+    background-image:linear-gradient(to right,#332a0a, #656f34);
+  }
+  .tab-btn.active {
+    background-image:linear-gradient(to right,#020201, #656f34);;
+    color: white;
+  }
+
+  .content {
+    display: none;
+  }
+  .content.show {
+    display: flex;
+    background-color: #656f34;
+    border-radius: 0 2rem 2rem 0;
+    width:  90rem;
+    height: 100%;
+    padding: 2rem; 
+  }
+  
+  .content-tab-buttons{
+    margin: 0 6rem;
+    display: flex;
+    column-gap:3rem;
+  }
+  .content-tab-btn {
+    border: none;
+    color: #030637;
+    background-image: linear-gradient(to right, #656f34, transparent);
+    border-radius: 3rem 3rem 0rem 0rem ;
+    font-weight: 100;
+    padding: 1rem 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 8rem;
+  }
+  .content-tab-btn:hover {
+    background-image:linear-gradient( transparent, #332a0a);
+  }
+  .content-tab-btn.active {
+    background-image:linear-gradient(#332a0a, transparent);
+    color: white;
+  }
+  .content {
+    display: none;
+  }
+  .content.show {
+    display: flex;
+    background-color: #656f34;
+    border-radius: 0 2rem 2rem 0;
+    width:  90rem;
+    height: 100%;
+    padding: 2rem; 
   }
 /* social media button */
 .social-media-btn{
@@ -898,6 +983,7 @@ footer{
     color: white;
     font-weight: bolder;
     box-shadow: -0.1rem 0.1rem 0.1rem 0.2rem #3e3e3e;
+    letter-spacing: 0.2rem;
 }
 .map-card-explore-btn:hover{
     cursor: pointer;
@@ -922,6 +1008,12 @@ footer{
     .screen-sm-hidden{
         display: none;
     }    
+    .hiking-conditions{
+        display: block;
+    }
+    .accordion-box{
+        display: flex;
+    }
 
 }
 @media screen and (min-width: 701px) and (max-width: 1024px){
