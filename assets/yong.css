@@ -931,6 +931,18 @@ hr.event-card-line{
     transition: all 0.5s;
     box-shadow: 0 0 1rem 1rem rgb(30, 30, 30);
 }
+.whatsapp-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10000;
+}
+.whatsapp-btn button{
+    background-color: #25D366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+}
 /* footer */
 footer{
     background-color: whitesmoke;
