@@ -552,6 +552,22 @@ hr.event-card-line{
     border-image: linear-gradient(to right, #5a2d20, #b86e49);
     border-image-slice: 1;
 }
+.cabin-chalet{
+    margin: 3rem 4rem 1rem 4rem;
+    color: white;
+    min-height: 100vh;
+    height: auto;
+    padding: 6rem;
+}
+.cabin-chalet ul{
+    list-style-type: disc;
+    text-align: start;
+    font-size: 2.7rem;
+    margin: 1rem;
+}
+.cabin-chalet ul li{
+    margin-left: 3rem;
+}
 /* Rooms Container */
 .screen-sm-hidden{
     display: block;
@@ -1018,7 +1034,7 @@ footer{
 }
 @media screen and (min-width: 701px) and (max-width: 1024px){
     html{
-        font-size: 35%;
+        font-size: 40%;
     }
     .mobile-menu{
         display: none;
