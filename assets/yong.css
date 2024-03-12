@@ -308,7 +308,7 @@ ul{
         margin: 1rem;
     }
     .close-btn{
-        color: black;
+        color: white;
     }
     
 
@@ -556,7 +556,7 @@ hr.event-card-line{
     margin: 3rem 4rem 1rem 4rem;
     color: white;
     min-height: 100vh;
-    height: auto;
+    height:fit-content
     padding: 6rem;
 }
 .cabin-chalet ul{
@@ -651,6 +651,10 @@ hr.event-card-line{
     justify-content: center;
     margin: 4rem;
 }
+.seperate-view{
+    display: flex;
+    align-items: center;
+}
 .seperate-view img{
     width:40rem;
     height: 45rem;
@@ -667,18 +671,19 @@ hr.event-card-line{
     margin: 0 1rem;
   }
   
-  #slider button{
+  #seperate-view button{
     width: 4rem;
     height: 16rem;
     background-color: var(--theme-color-light);
     color:#fff;
     cursor: pointer;
     border-radius: 2rem;
+    margin: 0rem 1rem;
   }
-  #slider button:active{
+  #seperate-view button:active{
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
-  #slider button:hover{
+  #seperate-view button:hover{
     background-color: var(--theme-color);
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
@@ -1032,6 +1037,9 @@ footer{
     .accordion-box{
         display: flex;
     }
+    .acco-details{
+        min-height: 200vh;
+    }
 
 }
 @media screen and (min-width: 701px) and (max-width: 1024px){
@@ -1051,11 +1059,14 @@ footer{
     }
     .rooms-box{
         display: flex;
-        width: 120rem;
+        width: 118rem;
         align-items: center;
     }
     .vl{
         display: inline-block;
+    }
+    .acco-details{
+        min-height: 150vh;
     }
 }
 @media screen and (min-width: 1025px) {
@@ -1112,5 +1123,6 @@ footer{
     }
     .seperate-view{
         z-index: 9999;
+        display: flex;
     }
 }
