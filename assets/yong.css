@@ -851,10 +851,10 @@ hr.event-card-line{
     font-size: 4rem;
   }
   .tab-btn:hover {
-    background-image:linear-gradient(to right,#332a0a, #656f34);
+    background-image:linear-gradient(to right, #332a0a, #656f34);
   }
   .tab-btn.active {
-    background-image:linear-gradient(to right,#020201, #656f34);;
+    background-image:linear-gradient(to right, #020201, #656f34);;
     color: white;
   }
 
@@ -899,7 +899,7 @@ hr.event-card-line{
   .details.show {
     display: block;
     border-radius: 0 2rem 2rem 0;
-    background-image: linear-gradient(to right, transparent, #332a0a7e);
+    background-image: linear-gradient(to bottom, transparent, #332a0a7e);
     width:  85rem;
     height: 52rem;
     padding: 2rem; 
