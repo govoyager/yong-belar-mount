@@ -186,10 +186,11 @@ document.addEventListener('DOMContentLoaded',() => {
         });
     })
 
-    const tabButtons = document.querySelectorAll('.tab-btn')
+    // for name tabs
+    const tabButtons = document.querySelectorAll('.tab-btn');
 
     tabButtons.forEach((tab) => {
-    tab.addEventListener('click', () => tabClicked(tab))
+    tab.addEventListener('click', () => tabClicked(tab));
     })
 
     function tabClicked(tab) {
@@ -197,18 +198,53 @@ document.addEventListener('DOMContentLoaded',() => {
     tabButtons.forEach(tab => {
         tab.classList.remove('active')
     })
-    tab.classList.add('active')
-    
-    const contents = document.querySelectorAll('.content')
+    tab.classList.add('active');
+
+    const contents = document.querySelectorAll('.content');
     
     contents.forEach((content) => {
-        content.classList.remove('show')
+        content.classList.remove('show');
     })
     
-    const contentId = tab.getAttribute('content-id')
-    const contentSelected = document.getElementById(contentId)
+    const contentId = tab.getAttribute('content-id');
+    const contentSelected = document.getElementById(contentId);
     
-    contentSelected.classList.add('show')
+    contentSelected.classList.add('show');
     //console.log(contentId)
+    // for fixed view while changing the plan options
+    const activeButtonChanger = contentSelected.getElementsByClassName('content-tab-btn');
+    activeButtonChanger[0].classList.add('active');
+    activeButtonChanger[1].classList.remove('active');
+
+    const activeButtonChanger2 = contentSelected.getElementsByClassName('details');
+    activeButtonChanger2[0].classList.add('show');
+    activeButtonChanger2[1].classList.remove('show');
     }
+    
+    // for content tabs
+    
+    const contentTabButtons = document.querySelectorAll('.content-tab-btn');
+
+        contentTabButtons.forEach((contentTab) => {
+            contentTab.addEventListener('click', () => contentTabClicked(contentTab));
+        })
+
+        function contentTabClicked(contentTab) {
+        
+        contentTabButtons.forEach(contentTab => {
+            contentTab.classList.remove('active')
+        })
+        contentTab.classList.add('active');    
+        const details = document.querySelectorAll('.details');
+        
+        details.forEach((detail) => {
+            detail.classList.remove('show');
+        })
+        
+        const detailId = contentTab.getAttribute('detail-id');
+        const detailSelected = document.getElementById(detailId);
+        
+        detailSelected.classList.add('show');
+        //console.log(contentId)
+        }
 }
