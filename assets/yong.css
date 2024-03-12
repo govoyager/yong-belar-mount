@@ -1038,7 +1038,7 @@ footer{
         display: flex;
     }
     .acco-details{
-        min-height: 150vh;
+        min-height: 120vh;
     }
 
 }
