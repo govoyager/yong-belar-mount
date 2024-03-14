@@ -717,21 +717,20 @@ hr.event-card-line{
     margin: 2rem -1rem;
     padding: 1rem 2rem ;
     border-radius: 3rem;
-    background-color: var(--font-color);
-    color: whitesmoke;
+    background-color: #030637dd;
+    color: white;
     font-weight: bolder;
     border: 0.2rem solid whitesmoke;
 }
 .exp-explore-btn:hover{
-    background-color: #24296b;
+    background-color: var(--font-color);
     color: white;
     transition: 0.25s;
-    box-shadow: 0.1rem 0.01rem 0.1rem 0.2rem var(--theme-color);
+    box-shadow: 0.1rem 0.01rem 0.1rem 0.2rem var(--font-color);
 }
 /* hiking page */
 /* hiking conditions */
 .hiking-conditions{
-    display: none;
     margin: 5rem 10rem;
 }
 .hiking-conditions ul li{
@@ -865,7 +864,6 @@ hr.event-card-line{
     display:flex;
     width: 130rem;
     height: 65rem;
-    z-index: 1000;
 }
 .tab-buttons{
     display: flex;
@@ -990,7 +988,7 @@ hr.event-card-line{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    z-index: 10000;
+    z-index: 998;
 }
 .whatsapp-btn button{
     background-color: #25D366;
@@ -998,6 +996,19 @@ hr.event-card-line{
     padding: 1rem 2rem;
     border-radius: 2.5rem;
 }
+.register-form{
+    position: fixed;
+    bottom: 8rem;
+    right: 2rem;
+    z-index: 998;
+}
+.register-form button{
+    background-color: var(--font-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+}
+
 /* footer */
 footer{
     background-color: whitesmoke;
@@ -1097,9 +1108,7 @@ footer{
     .screen-sm-hidden{
         display: none;
     }    
-    .hiking-conditions{
-        display: block;
-    }
+
     .accordion-box{
         display: flex;
     }
