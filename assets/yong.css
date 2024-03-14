@@ -260,12 +260,13 @@ ul{
         position: absolute;
         background-image: linear-gradient(#332a0a, #656f34 );
         color: white;
-        min-width: 16rem;
+        min-width: 20rem;
         top: 5rem;
         right: 1rem;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 2;
         border-radius: 1rem;
+        font-size: 3rem;
     }
     .more-content a{
         margin: 1rem;
@@ -858,11 +859,11 @@ hr.event-card-line{
 .tab-container{
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    margin: 3rem 1rem;
 }
 .tab-box{
     display:flex;
-    width: 130rem;
+    width: 120rem;
     height: 65rem;
 }
 .tab-buttons{
@@ -873,7 +874,7 @@ hr.event-card-line{
 }
   
   .tab-btn {
-    width: 40rem;
+    width: 35rem;
     height: 10rem;
     border: none;
     color: #030637;
@@ -908,7 +909,8 @@ hr.event-card-line{
   .content-tab-buttons{
     margin: 0 2rem;
     display: flex;
-    column-gap:5rem;
+    justify-content: space-between;
+    column-gap: 5rem;
   }
   .content-tab-btn{
     border: none;
@@ -935,7 +937,7 @@ hr.event-card-line{
     display: block;
     border-radius: 0 0 2rem 2rem;
     background-image: linear-gradient(to bottom, #ffffffe7, transparent);
-    width:  85rem;
+    width:  80rem;
     height: 52rem;
     padding: 2rem; 
     margin: 0 2rem;
@@ -1166,6 +1168,9 @@ footer{
     .acco-details{
         min-height: 150vh;
     }
+    .tab-box{
+        width: 130rem;
+    }
 }
 @media screen and (min-width: 1025px) {
     html{
@@ -1220,5 +1225,15 @@ footer{
     .seperate-view{
         z-index: 9999;
         display: flex;
+    }
+    
+    .tab-box{
+        width: 130rem;
+    }
+    .tab-btn{
+        width: 40rem;
+    }
+    .details.show{
+        width: 85rem; 
     }
 }
