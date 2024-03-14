@@ -832,7 +832,6 @@ hr.event-card-line{
 .trip-cost{
     text-align: start;
     margin: 3rem 0 ;
-    color: whitesmoke;
 }
 .trip-cost ul{
     margin: 1rem;
@@ -865,11 +864,13 @@ hr.event-card-line{
 .tab-box{
     display:flex;
     width: 130rem;
-    height: 85rem;
+    height: 65rem;
+    z-index: 1000;
 }
-.tab-buttons {
+.tab-buttons{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 1rem;
 }
   
@@ -899,7 +900,7 @@ hr.event-card-line{
   }
   .content.show {
     display: flex;
-    background-color: #656f34;
+    background-image:linear-gradient(to bottom, #332a0a, #656f34);
     border-radius: 0 2rem 2rem 0;
     width:  90rem;
     height: 100%;
@@ -907,14 +908,14 @@ hr.event-card-line{
   }
   
   .content-tab-buttons{
-    margin: 0 6rem;
+    margin: 0 2rem;
     display: flex;
     column-gap:5rem;
   }
-  .content-tab-btn {
+  .content-tab-btn{
     border: none;
     color: #030637;
-    background-color: #656f34;
+    background-image: linear-gradient(to top, #332a0a, #656f34);
     border-radius: 3rem 3rem 0rem 0rem ;
     font-weight: 100;
     padding: 1rem 12rem;
@@ -923,23 +924,37 @@ hr.event-card-line{
     font-size: 4rem;
   }
   .content-tab-btn:hover {
-    background-image:linear-gradient( to top, transparent, #332a0a);
+    background-color: white;
   }
   .content-tab-btn.active {
-    background-color: #332a0a8d;
-    color: white;
+    background-image: linear-gradient(#ffffffe7, #ffffffe7);
+    color: var(--font-color);
   }
-  .details {
+  .details{
     display: none;
   }
   .details.show {
     display: block;
-    border-radius: 2rem;
-    background-color: #332a0a8d;
+    border-radius: 0 0 2rem 2rem;
+    background-image: linear-gradient(to bottom, #ffffffe7, transparent);
     width:  85rem;
     height: 52rem;
     padding: 2rem; 
     margin: 0 2rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .timeline-list{
+    list-style-type: disc;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+  .timeline-list li {
+    list-style-type: disc;
+    display: flex;
+    column-gap: 15rem;
+  }
+  .timeline-list li span:first-child{
+    width: 2rem;
   }
   .for-whom{
     font-size: 2.8rem;
