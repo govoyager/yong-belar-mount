@@ -1172,7 +1172,19 @@ footer{
         min-height: 150vh;
     }
     .tab-box{
-        width: 130rem;
+        width: 125rem;
+        margin: 1rem 0;
+        padding:0;
+    }
+    .details.show{
+        width: 80rem; 
+    }
+    .content-tab-btn{
+        padding: 1rem 6rem;
+        width: 35rem;
+    }
+    .tab-btn{
+        width: 40rem;
     }
 }
 @media screen and (min-width: 1025px) {
