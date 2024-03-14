@@ -865,7 +865,7 @@ hr.event-card-line{
 .tab-box{
     display:flex;
     width: 130rem;
-    height: 65rem;
+    height: 85rem;
 }
 .tab-buttons {
     display: flex;
@@ -914,7 +914,7 @@ hr.event-card-line{
   .content-tab-btn {
     border: none;
     color: #030637;
-    background-image: linear-gradient(to right, #656f34, transparent);
+    background-color: #656f34;
     border-radius: 3rem 3rem 0rem 0rem ;
     font-weight: 100;
     padding: 1rem 12rem;
@@ -923,10 +923,10 @@ hr.event-card-line{
     font-size: 4rem;
   }
   .content-tab-btn:hover {
-    background-image:linear-gradient( transparent, #332a0a);
+    background-image:linear-gradient( to top, transparent, #332a0a);
   }
   .content-tab-btn.active {
-    background-image:linear-gradient(#332a0a, transparent);
+    background-color: #332a0a8d;
     color: white;
   }
   .details {
@@ -934,11 +934,15 @@ hr.event-card-line{
   }
   .details.show {
     display: block;
-    border-radius: 0 2rem 2rem 0;
-    background-image: linear-gradient(to bottom, transparent, #332a0a7e);
+    border-radius: 2rem;
+    background-color: #332a0a8d;
     width:  85rem;
     height: 52rem;
     padding: 2rem; 
+    margin: 0 2rem;
+  }
+  .for-whom{
+    font-size: 2.8rem;
   }
 /* social media button */
 .social-media-btn{
