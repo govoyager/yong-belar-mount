@@ -318,8 +318,8 @@ ul{
 
                                /* ------------------ Home page ---------------- */
 .animated {
-	animation-duration: 5s;
-	animation-duration: 5s;
+	animation-duration: 2.5s;
+	animation-duration: 2.5s;
 	animation-fill-mode: both;
 }
 /* @keyframes pulse {
