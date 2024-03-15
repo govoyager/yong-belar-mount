@@ -317,57 +317,7 @@ ul{
     
 
                                /* ------------------ Home page ---------------- */
-.animated {
-	animation-duration: 2.5s;
-	animation-duration: 2.5s;
-	animation-fill-mode: both;
-}
-/* @keyframes pulse {
-	0% {
-		-webkit-transform: scaleX(1);
-		transform: scaleX(1);
-	}
 
-	50% {
-		-webkit-transform: scale3d(1.1, 1.1, 1.1);
-		transform: scale3d(1.1, 1.1, 1.1);
-	}
-
-	to {
-		-webkit-transform: scaleX(1);
-		transform: scaleX(1);
-	}
-}
-
-.pulse {
-	-webkit-animation-name: pulse;
-	animation-name: pulse;
-	-webkit-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
-} */
-
-@keyframes fadeInRight {
-	0% {
-		opacity: 1;
-		-webkit-transform: translate3d(40%, 0, 0);
-		transform: translate3d(40%, 0, 0) ;
-	}
-	50% {
-		opacity: 0.95;
-    } 
-	to {
-		opacity: 1;
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0) ;
-	}
-}
-
-.fadeInRight {
-	-webkit-animation-name: fadeInRight;
-	animation-name: fadeInRight;
-    -webkit-animation-timing-function: ease-in-out;
-	animation-timing-function: ease-in-out;
-}
 .heading{
     display: flex;
     flex-direction: column;
