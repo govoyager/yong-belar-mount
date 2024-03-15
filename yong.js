@@ -6,6 +6,7 @@ const selectElement = (selector) => {
 
 
 // navbar
+
 const scrollHeader = () => {
     const headerElement = selectElement('#header');
     if(this.scrollY >= 5){
@@ -36,6 +37,22 @@ window.onclick = (event) =>{
     }
     console.log("window clicked clicked clicked");
 }
+// Home page yong belar scroll effect
+const animatedEls = document.querySelectorAll("[data-animation]");
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		const animation = entry.target.getAttribute("data-animation");
+
+		if (entry.isIntersecting) {
+			entry.target.classList.add("animated", `${animation}`);
+		} else {
+			entry.target.classList.remove("animated", `${animation}`);
+		}
+	});
+});
+
+animatedEls.forEach((el) => observer.observe(el));
 
 // Accomodation image slider
 const SLIDER_WIDTH = 5;
