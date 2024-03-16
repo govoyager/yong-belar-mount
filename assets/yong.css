@@ -303,7 +303,7 @@ ul{
         display: block; 
     }
     .mobile-menu-content ul{
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
     }
     .close-btn-container{
         display: flex;
@@ -1256,3 +1256,5 @@ footer{
         width: 85rem; 
     }
 }
+
+
