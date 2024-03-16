@@ -310,6 +310,7 @@ ul{
         align-items: start;
         justify-content: end;
         margin: 1rem;
+        margin-right: 3rem;
     }
     .close-btn{
         color: white;
