@@ -66,6 +66,7 @@ button{
     border: none;
     outline: none;
     background-color: inherit;
+    margin: none;
 }
 img{
     width: 100%;
@@ -1000,23 +1001,24 @@ hr.event-card-line{
     right: 2rem;
     z-index: 998;
 }
-.whatsapp-btn button{
+.whatsapp-btn a{
     background-color: #25D366;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 2.5rem;
 }
 .register-form{
     position: fixed;
-    bottom: 8rem;
+    bottom: 10rem;
     right: 2rem;
     z-index: 998;
 }
-.register-form button{
+.register-form a{
     background-color: var(--font-color);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 2.5rem;
+    width: auto;
 }
 
 /* footer */
