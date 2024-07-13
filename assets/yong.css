@@ -998,7 +998,7 @@ hr.event-card-line{
 .whatsapp-btn{
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    left: 2rem;
     z-index: 998;
 }
 .whatsapp-btn a{
@@ -1007,6 +1007,7 @@ hr.event-card-line{
     padding: 1.5rem 2rem;
     border-radius: 2.5rem;
 }
+
 .register-form{
     position: fixed;
     bottom: 10rem;
