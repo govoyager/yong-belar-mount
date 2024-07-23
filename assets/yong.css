@@ -32,7 +32,7 @@
     --margin-md: 3.6rem;
     --margin-sm: 2.4rem;
     --margin-xsm: 1.8rem;
-    --margin-xxs: 1.2rem;
+    --margin-xxs: 1.2rem; 
     
     --gap: 2rem;
     /* used colors */
@@ -998,7 +998,7 @@ hr.event-card-line{
 .whatsapp-btn{
     position: fixed;
     bottom: 2rem;
-    left: 2rem;
+    right: 2rem;
     z-index: 998;
 }
 .whatsapp-btn a{
